@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <title>E.T. Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <script type="text/javascript" src="data.js"></script>
+
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+  <div repeat='2' id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">E.T Sightings Database
+            <img class="nav-E.T" src="static/images/ET.jpg">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>E.T. Sightings?</h1>
+      <p>Are we alone in the universe?</p>
+    </div>
+    <div class="hero text-center">
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-12">
+          <p>Could it be true? Are aliens living among us? Hold on to your hats, for it may be true!! This database has been created for someone, such as yourself to search through documented sightings. Searchable by date, city, state, country and/or shape of the UFO.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Search By Type</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="city"> Enter a City </label>
+                        <input class="form-control" id="city" type="text" placeholder="plymouth">
+                      </li>
+                      <li class="filter list-group-item">
+                          <label for="state"> Enter a State </label>
+                          <input class="form-control" id="state" type="text" placeholder="mn">
+                      </li>
+                      <li class="filter list-group-item">
+                         <label for="country"> Enter a Country </label>
+                         <input class="form-control" id="country" type="text" placeholder="us">
+                      </li>
+                      <li class="filter list-group-item">
+                         <label for="city"> Enter a Shape </label>
+                         <input class="form-control" id="shape" type="text" placeholder="circle">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                  <button id="reset-filter-btn" type="submit" class="btn btn-default">Reset Filters</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <footer class="footer">
+      <span class="bottom">Aliens Among Us 2020</span>
+    </footer>
+    <img class="nav-ID" src="static/images/ID.jpg">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+
+  </body>
+</html>

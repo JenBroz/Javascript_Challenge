@@ -4,4 +4,4 @@ The truth is out there. Or is it? Across the continent, there have been reports 
 Data from reported sightings have been compiled and placed into a database for easy searching. Were there sightings in your neck of the woods? Are you prepared to find out? 
 
 
-/Users/jenniebrozena/Desktop/Javascript_Challenge/static/images/TTIOT.jpg
+![TTIOT](static/images/TTIOT.jpg)
